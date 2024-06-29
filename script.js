@@ -152,5 +152,3 @@
 // }
 // const newProd = getNewProd(prod);
 // console.log(newProd);
-
-
