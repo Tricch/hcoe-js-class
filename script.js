@@ -152,3 +152,95 @@
 // }
 // const newProd = getNewProd(prod);
 // console.log(newProd);
+
+// Compare
+// let foodA = ['Noodles', 'Pasta', 'Ice-cream'];
+// let foodB = ['Fries', 'Ice-cream', 'Pizza'];
+// const getCommon = (arrA, arrB) => arrA.filter((item) => arrB.includes(item));
+// const result = getCommon(foodA, foodB);
+// console.log(result);
+
+
+// Sort
+// const classes = [
+//     { name: "Ram", age: 20 },
+//     { name: "Sita", age: 15 },
+//     { name: "Shyam", age: 40 },
+// ];
+// const ageSorter = (arr) => {
+//     return arr.sort((a, b) => a.age - b.age);
+// };
+// const result = ageSorter(classes);
+// console.log(result);
+
+// largest country by length
+// const countries = ["Nepal", "USA", "Australia"];
+// // const getLargest = (arr) => arr.sort((a, b) => b.length - a.length)[0];
+// const getLargest = (arr) => arr.sort((a, b) => a.length - b.length)[arr.length - 1];
+// const result = getLargest(countries);
+// console.log(result);
+
+// const largestCountry = (arr) => {
+//     let largest = "";
+//     arr.map((country) => {
+//         if (largest.length > country.length) {
+//             return;
+//         } else {
+//             largest = country;
+//         }
+//     });
+//     return largest;
+// }
+
+// // Comapare two roles and return boolean if role matches
+// const sysRole = ['admin', 'manager'];
+// const userRole = ['user', 'receptionist', 'manager'];
+// const roleChecker = (arrA, arrB) => (arrA.some((item) => arrB.includes(item))) ? true : false;
+// const result = roleChecker(sysRole, userRole);
+// console.log(result);
+
+
+// Get the total number of characters by eye color
+// const characters = [
+//     {
+//         name: 'Luke Skywalker',
+//         height: '172',
+//         mass: '77',
+//         eye_color: 'blue',
+//         gender: 'male',
+//     },
+//     {
+//         name: 'Darth Vader',
+//         height: '202',
+//         mass: '136',
+//         eye_color: 'yellow',
+//         gender: 'male',
+//     },
+//     {
+//         name: 'Leia Organa',
+//         height: '150',
+//         mass: '49',
+//         eye_color: 'brown',
+//         gender: 'female',
+//     },
+//     {
+//         name: 'Anakin Skywalker',
+//         height: '188',
+//         mass: '84',
+//         eye_color: 'blue',
+//         gender: 'male',
+//     },
+// ];
+// const eyeColor = (arr) => {
+//     return arr.reduce((a, b) => {
+//         const color = b.eye_color;
+//         if (a[color]) {
+//             a[color]++;
+//         } else {
+//             a[color] = 1;
+//         }
+//         return a;
+//     }, {});
+// };
+// const result = eyeColor(characters);
+// console.log(result);
